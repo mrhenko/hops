@@ -1,4 +1,4 @@
 hops
 ====
 
-A really simple shell script for downloading and unpacking source from GitHub
+A really simple bash shell script for downloading and unpacking source from GitHub
