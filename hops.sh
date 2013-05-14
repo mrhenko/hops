@@ -10,8 +10,8 @@ urlToGet="https://github.com/mrhenko/WebbNote/archive/0.1.6.5.tar.gz"
 fileName="WebbNote-0.1.6.5"
 newFileName="webbnote"
 
-sudo rm -fr $newFileName # Remove any old code
+rm -fr $newFileName # Remove any old code
 
-wget --no-check-certificate $urlToGet -O - | sudo tar zx # Fetch and unpack the code
+wget --no-check-certificate $urlToGet -O - | tar zx # Fetch and unpack the code
 
 mv $fileName $newFileName # Rename to appropriate folder name
