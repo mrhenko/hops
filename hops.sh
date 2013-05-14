@@ -5,10 +5,13 @@
 # A really simple shell script for downloading an unpacking source from GitHub
 #
 
-# sudo wget --no-check-certificate https://github.com/mrhenko/WebbNote/archive/0.1.6.5.tar.gz -O - | sudo tar zx
+# Example variables. Replace the values with whatever your files and url is
+urlToGet="https://github.com/mrhenko/WebbNote/archive/0.1.6.5.tar.gz"
+fileName="WebbNote-0.1.6.5"
+newFileName="webbnote"
 
-urlToGet = "https://github.com/mrhenko/WebbNote/archive/0.1.6.5.tar.gz"
+sudo rm -fr $newFileName # Remove any old code
 
-wget --no-check-certificate $urlToGet
+wget --no-check-certificate $urlToGet -O - | sudo tar zx # Fetch and unpack the code
 
-
+mv $fileName $newFileName # Rename to appropriate folder name
